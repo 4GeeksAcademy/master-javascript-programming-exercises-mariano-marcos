@@ -1,5 +1,14 @@
 function getSquaredElementsAtProperty(obj, key) {
     // your code here
+
+    let output = [];
+
+    if(obj[key] != undefined && Array.isArray(obj[key])){
+
+      output = obj[key].map(item => Math.pow(item,2));
+    }
+
+    return output;
     
 }
 

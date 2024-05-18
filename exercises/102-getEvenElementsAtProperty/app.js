@@ -1,6 +1,13 @@
 function getEvenElementsAtProperty(obj, key) {
     // your code here
     
+    let output = [];
+
+    if (obj[key] != undefined && Array.isArray(obj[key])){
+
+      output = obj[key].filter(item => typeof item === 'number' && item % 2 === 0 );
+    }
+    return output;
 }
 
 let obj = {
