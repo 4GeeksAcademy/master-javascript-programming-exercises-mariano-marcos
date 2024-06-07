@@ -1,6 +1,7 @@
 function flipPairs(input) {
     // your code here
     
+    
 }
 
 let input = "Can you see what this is about?";
